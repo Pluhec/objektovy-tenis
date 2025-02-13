@@ -112,5 +112,27 @@ public class Logika {
             }
         }
         vystup.outputMessage(domaciHry, hosteHry, domaciGemy, hosteGemy, domaciSety, hosteSety, vyhoda);
+
+    }
+
+
+//    logika pro vypisovani vyhod
+    String homeAdvantage(int domaciHry){
+        if (domaciHry == 100){
+            return vyhoda;
+        }else{
+            String domaciHryString = String.valueOf(domaciHry);
+            return domaciHryString;
+        }
+    }
+
+    String hostAdvantage(int hostHry) {
+        if (hosteHry == 100) {
+            return vyhoda;
+        } else {
+            String hosteHryString = String.valueOf(hosteHry);
+            return hosteHryString;
+
+        }
     }
 }
