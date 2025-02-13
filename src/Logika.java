@@ -132,7 +132,15 @@ public class Logika {
         } else {
             String hosteHryString = String.valueOf(hosteHry);
             return hosteHryString;
-
         }
+    }
+
+    String gameOver(int domaciSety, int hosteSety){
+        if (domaciSety == 2) {
+            return "domaci vyhrali";
+        }else if (hosteSety == 2) {
+            return "hoste vyhrali";
+        }
+        return "";
     }
 }

@@ -25,21 +25,13 @@ public class Vystupy {
     void outputMessage(int domaciHry, int hosteHry, int domaciGemy, int hosteGemy, int domaciSety, int hosteSety, String vyhoda){
         String domaci = logika.homeAdvantage(domaciHry);
         String hoste = logika.hostAdvantage(hosteHry);
+        String gameOver = logika.gameOver(domaciSety, hosteSety);
 
         System.out.print("   Domací  : Hosté\n");
         System.out.print("Hry  " + domaci  + " : " + hoste + "\n");
         System.out.println("Gemy " + domaciGemy + " : " + hosteGemy + "\n");
         System.out.println("Sety " + domaciSety + " : " + hosteSety + "\n");
-
-        if (domaciSety == 2) {
-            System.out.print("domaci vyhrali " + domaciSety + " : " + hosteSety + "\n");
-            endGame();
-        }
-
-        if (hosteSety == 2) {
-            System.out.print("hoste vyhrali " + hosteSety + " : " + domaciSety + "\n");
-            endGame();
-        }
+        System.out.println(gameOver);
 
         logika.getInput(this);
     }
