@@ -14,7 +14,13 @@ public class Logika {
     void getInput(Vystupy vystupy){
         int vstup = vystupy.input();
         process(vstup, vystupy);
+//        process2(vstup, vystupy);
     }
+
+//    void process2(int vstup, Vystupy vystup){
+//
+//    }
+
 
     void process(int vstup, Vystupy vystup){
 

@@ -35,8 +35,4 @@ public class Vystupy {
 
         logika.getInput(this);
     }
-
-    void endGame(){
-        System.out.println("Game Over");
-    }
 }
